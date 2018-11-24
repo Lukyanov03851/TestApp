@@ -31,8 +31,6 @@ class UsersListFragment : Fragment() {
 
     private var users: ArrayList<User> = arrayListOf()
 
-//    internal lateinit var rvUsers: RecyclerView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mViewModel = ViewModelProviders.of(activity!!).get(MainViewModel::class.java)
@@ -58,7 +56,7 @@ class UsersListFragment : Fragment() {
         rvUsers.layoutManager = LinearLayoutManager(context)
 
         val adapter = UsersListAdapter(users)
-        adapter.setOnUserItemClickListener(object : UsersListAdapter.OnUserItemClicListener {
+        adapter.setOnUserItemClickListener(object : UsersListAdapter.OnUserItemClickListener {
             override fun onUserItemClick(user: User) {
                 mViewModel?.onUserClick(user)
             }

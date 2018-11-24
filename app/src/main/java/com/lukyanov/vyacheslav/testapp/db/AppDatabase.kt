@@ -11,7 +11,6 @@ import com.lukyanov.vyacheslav.testapp.db.model.User
 abstract class AppDatabase : RoomDatabase()  {
 
     abstract fun userDao(): UserDao
-//    abstract fun addressDao(): UserAddressDao
 
     companion object {
         private var INSTANCE: AppDatabase? = null

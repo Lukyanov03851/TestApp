@@ -15,8 +15,6 @@ class CustomMapView : MapView {
 
     constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle) {}
 
-    constructor(context: Context, options: GoogleMapOptions) : super(context, options) {}
-
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
         /**
          * Request all parents to relinquish the touch events

@@ -16,7 +16,6 @@ import kotlinx.android.synthetic.main.fragment_user_details.*
 import com.google.android.gms.maps.model.MarkerOptions
 import com.lukyanov.vyacheslav.testapp.R
 
-
 private const val ARG_USER = "user"
 private const val MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey"
 
@@ -72,7 +71,6 @@ class UserDetailsFragment : Fragment(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap?) {
         gmap = googleMap
-//        gmap?.setMinZoomPreference(4F)
         val ny = LatLng(user?.address?.geo?.lat!!, user?.address?.geo?.lng!!)
         val markerOptions = MarkerOptions()
         markerOptions.position(ny)

@@ -8,7 +8,7 @@ import com.lukyanov.vyacheslav.testapp.db.model.User
 
 class UsersListAdapter(private val users : List<User>) : RecyclerView.Adapter<UsersListAdapter.ViewHolder>() {
 
-    private var onUserItemClickListener: OnUserItemClicListener? = null
+    private var onUserItemClickListener: OnUserItemClickListener? = null
     // Gets the number of animals in the list
     override fun getItemCount(): Int {
         return users.size
@@ -36,11 +36,11 @@ class UsersListAdapter(private val users : List<User>) : RecyclerView.Adapter<Us
         }
     }
 
-    fun setOnUserItemClickListener(listener: OnUserItemClicListener){
+    fun setOnUserItemClickListener(listener: OnUserItemClickListener){
         onUserItemClickListener = listener
     }
 
-    interface OnUserItemClicListener{
+    interface OnUserItemClickListener{
         fun onUserItemClick(user: User)
     }
 }
