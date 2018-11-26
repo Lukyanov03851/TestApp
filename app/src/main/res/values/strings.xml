@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">TestApp</string>
-    <string name="facebook_app_id">1197834610358439</string>
-    <string name="fb_login_protocol_scheme">fb1197834610358439</string>
+    <!--<string name="facebook_app_id">1197834610358439</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb1197834610358439</string>-->
+
+    <string name="facebook_app_id">321456535112785</string>
+    <string name="fb_login_protocol_scheme">fb321456535112785</string>
     <string name="logout">Logout</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="empty_list">The list is empty!</string>
 
 </resources>
